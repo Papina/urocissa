@@ -11,6 +11,7 @@ import ArchivedPage from '@/components/Page/ArchivedPage.vue'
 import TrashedPage from '@/components/Page/TrashedPage.vue'
 import AlbumsPage from '@/components/Page/AlbumsPage.vue'
 import VideosPage from '@/components/Page/VideosPage.vue'
+import ComparePage from '@/components/Page/ComparePage.vue'
 import { createRoute } from './createRoute'
 import { tagsRoute } from './tagsRoute'
 import { linksRoute } from './linksRoute'
@@ -49,6 +50,8 @@ const albumsPageRoutes = createRoute('albums', AlbumsPage)
 
 const videosPageRoutes = createRoute('videos', VideosPage)
 
+const comparePageRoutes = createRoute('compare', ComparePage)
+
 // ======================================
 // Combine All Routes
 // ======================================
@@ -61,7 +64,8 @@ const routes: RouteRecordRaw[] = [
   ...archivedPageRoutes,
   ...trashedPageRoutes,
   ...albumsPageRoutes,
-  ...videosPageRoutes
+  ...videosPageRoutes,
+  ...comparePageRoutes
 ]
 
 // ======================================
@@ -95,7 +99,8 @@ router.afterEach((to) => {
     links: 'Links',
     login: 'Login',
     share: 'Share',
-    config: 'Configuration'
+    config: 'Configuration',
+    compare: 'CompareZoom'
   }
 
   let baseTitle: string

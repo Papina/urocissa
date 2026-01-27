@@ -28,7 +28,7 @@ declare module 'vue-router' {
   }
 }
 
-type BaseName =
+export type BaseName =
   | 'home'
   | 'all'
   | 'favorite'
@@ -42,4 +42,5 @@ type BaseName =
   | 'share'
   | 'links'
   | 'config'
+  | 'compare'
 

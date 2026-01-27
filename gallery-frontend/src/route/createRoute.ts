@@ -7,20 +7,7 @@ import 'vue-router'
 import ViewPageMain from '@/components/View/ViewPageMain.vue'
 import HomeIsolated from '@/components/Home/HomeIsolated.vue'
 import ViewPageIsolated from '@/components/View/ViewPageIsolated.vue'
-
-type BaseName =
-  | 'home'
-  | 'all'
-  | 'favorite'
-  | 'archived'
-  | 'trashed'
-  | 'albums'
-  | 'videos'
-  | 'album'
-  | 'tags'
-  | 'login'
-  | 'share'
-  | 'links'
+import type { BaseName } from './pageReturnType'
 
 // ======================================
 // Define a Helper Function to Create Routes
