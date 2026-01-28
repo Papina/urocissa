@@ -100,7 +100,7 @@ router.afterEach((to) => {
     login: 'Login',
     share: 'Share',
     config: 'Configuration',
-    compare: 'CompareZoom'
+    compare: 'Compare'
   }
 
   let baseTitle: string

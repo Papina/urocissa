@@ -1,21 +1,13 @@
 <template>
   <PageTemplate>
     <template #content>
-      <div class="compare-page">
-        <h1>Compare and Zoom</h1>
-        <p>Select two images to compare.</p>
-        <!-- TODO: Implement image selection and comparison -->
-      </div>
+      <HomeMain :basic-string="basicString" />
     </template>
   </PageTemplate>
 </template>
 
 <script setup lang="ts">
+import HomeMain from '@/components/Home/HomeMain.vue'
 import PageTemplate from './PageLayout/PageTemplate.vue'
+const basicString = 'trashed:false'
 </script>
-
-<style scoped>
-.compare-page {
-  padding: 20px;
-}
-</style>
